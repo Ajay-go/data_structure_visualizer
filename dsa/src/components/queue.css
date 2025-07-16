@@ -1,49 +1,73 @@
-#array_container {
-    background-color: #0e2431;
+/* queue.css */
+
+#queue_wrapper {
+    background-color: black;
     padding: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     height: 100vh;
     width: 100vw;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box;
     overflow-x: hidden;
 }
 
-/* Input and Button Controls */
-#buttons {
-    margin-top: 30px;
+#queue_theory {
+    max-width: 900px;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00bfff55;
+    margin-bottom: 30px;
+}
+
+#queue_theory h2 {
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+#queue_theory p,
+#queue_theory ul {
+    color: #dcdcdc;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#queue_theory ul {
+    padding-left: 20px;
+}
+
+/* Controls */
+#queue_controls {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    max-width: 80%;
     margin-bottom: 30px;
 }
 
-#buttons input,
-#buttons button {
+#queue_controls input,
+#queue_controls button {
     padding: 10px 15px;
     font-size: 16px;
     border-radius: 8px;
     border: none;
-    outline: none;
 }
 
-#buttons input {
-    background-color: #1d1d1d;
-    color: white;
+#queue_controls input {
     width: 140px;
+    background-color: #222;
+    color: white;
     border: 1px solid #444;
 }
 
-#buttons input::placeholder {
+#queue_controls input::placeholder {
     color: #aaa;
 }
 
-#buttons button {
+#queue_controls button {
     background-color: #2d2d2d;
     color: white;
     border: 2px solid #00bfff;
@@ -51,13 +75,13 @@
     transition: all 0.3s ease;
 }
 
-#buttons button:hover {
+#queue_controls button:hover {
     background-color: #00bfff;
     color: black;
 }
 
-/* Array Visual Pipe */
-#array_pipe {
+/* Queue Visual Pipe */
+#queue_display {
     background-color: #1e1e1e;
     min-height: 50px;
     border-radius: 12px;
@@ -66,6 +90,7 @@
     gap: 10px;
     flex-wrap: nowrap;
     overflow-x: auto;
+    height: 50px;
     max-width: 90%;
     padding: 10px 20px;
     border: 2px solid #00bfff;
@@ -73,18 +98,17 @@
     scroll-behavior: smooth;
 }
 
-#array_pipe h1 {
+#queue_display h1 {
     background-color: #00bfff;
     color: black;
     padding: 10px 20px;
     font-size: 18px;
     min-width: 60px;
-    height: 40px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 2px dashed white;
     border-radius: 6px;
     white-space: nowrap;
-    user-select: none;
 }

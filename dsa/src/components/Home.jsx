@@ -16,7 +16,7 @@ function Home() {
                     <button id="button">Singly Linked List</button>
                     <button id="button">Doubly Linked List</button>
                     <button id="button">Stack</button>
-                    <button id="button">Queue</button>
+                    <button id="button" onClick={() => navigate('/queue')}>Queue</button>
                     <button id="button">Priority Queue</button>
                 </div>
             </div>
