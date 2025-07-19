@@ -1,16 +1,48 @@
-#array_container {
-    background-color: #000000;
+#stack_container {
+    background-color: black;
     padding: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
     overflow-x: hidden;
 }
+
+#theory {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    border: 1px solid #878d8f;
+    max-width: 90%;
+}
+
+#theory h2 {
+    color: #00bfff;
+    margin-bottom: 1rem;
+}
+
+#theory p,
+#theory li {
+    color: #dcdcdc;
+    max-width: 700px;
+    margin: 0.5rem auto;
+    line-height: 1.6;
+}
+
+#theory strong {
+    color: #f0c38e;
+}
+
+#theory ul {
+    text-align: left;
+    display: inline-block;
+}
+
 
 /* Input and Button Controls */
 #buttons {
@@ -46,35 +78,36 @@
 #buttons button {
     background-color: #2d2d2d;
     color: white;
-    border: 2px solid #424546;
+    border: 2px solid #00bfff;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 #buttons button:hover {
-    background-color: #c0bbb2;
+    background-color: #66988c;
     color: black;
 }
 
-/* Array Visual Pipe */
-#array_pipe {
+/* Stack Visual Pipe */
+#stack_pipe {
     background-color: #1e1e1e;
     min-height: 50px;
     border-radius: 12px;
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 10px;
     flex-wrap: nowrap;
     overflow-x: auto;
     max-width: 90%;
     padding: 10px 20px;
-    border: 2px solid #82898c;
+    border: 2px solid #00bfff;
     box-shadow: 0 0 10px #00bfff77;
     scroll-behavior: smooth;
 }
 
-#array_pipe h1 {
-    background-color: #e5d072;
+#stack_pipe h1 {
+    background-color: #cfb964;
     color: black;
     padding: 10px 20px;
     font-size: 18px;
@@ -87,4 +120,17 @@
     border-radius: 6px;
     white-space: nowrap;
     user-select: none;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

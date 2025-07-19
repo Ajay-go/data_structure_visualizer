@@ -1,9 +1,10 @@
 import React from "react";
 import './Home.css';
-import { useNavigate } from "react-router-dom"; // ✅ correct hook
+import './home_button.css';
+import { useNavigate } from "react-router-dom";
 
 function Home() {
-    const navigate = useNavigate(); // ✅ initialize
+    const navigate = useNavigate();
 
     return (
         <>
@@ -13,12 +14,21 @@ function Home() {
                 </div>
                 <div id="buttons">
                     <button id="button" onClick={() => navigate('/array')}>Array</button>
-                    <button id="button">Singly Linked List</button>
-                    <button id="button">Doubly Linked List</button>
-                    <button id="button">Stack</button>
+                    <button id="button" onClick={() => navigate('/linked-list')}>Singly Linked List</button>
+                    <button id="button" onClick={() => navigate('/stack')}>Stack</button>
                     <button id="button" onClick={() => navigate('/queue')}>Queue</button>
-                    <button id="button">Priority Queue</button>
+                    <button id="button" onClick={() => navigate('/priority-queue')}>Priority Queue</button>
                 </div>
+                <h3>
+                    <a
+                        href="https://portfolio-ajay-f598b.firebaseapp.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Designed and Developed by Ajay Gour
+                    </a>
+                </h3>
+
             </div>
         </>
     );

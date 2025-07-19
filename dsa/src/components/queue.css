@@ -76,7 +76,7 @@
 }
 
 #queue_controls button:hover {
-    background-color: #00bfff;
+    background-color: #c8c8ba;
     color: black;
 }
 
@@ -99,7 +99,7 @@
 }
 
 #queue_display h1 {
-    background-color: #00bfff;
+    background-color: #8fb863;
     color: black;
     padding: 10px 20px;
     font-size: 18px;
