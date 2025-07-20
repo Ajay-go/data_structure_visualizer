@@ -1,0 +1,219 @@
+:root {
+    --background-color: #121212;
+    --surface-color: #1e1e1e;
+    --primary-color: #bb86fc;
+    --primary-variant-color: #3700b3;
+    --secondary-color: #03dac6;
+    --text-color: #e0e0e0;
+    --border-color: #333333;
+    --input-bg-color: #2c2c2c;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.map-visualizer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.map-visualizer h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.map-theory {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    max-width: 900px;
+    width: 95%;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.map-theory h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.map-theory p,
+.map-theory li {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.visualizer-container {
+    display: flex;
+    gap: 2rem;
+    width: 95%;
+    max-width: 1200px;
+}
+
+.map-display,
+.controls {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.map-display {
+    display: flex;
+    flex-direction: column;
+}
+
+.map-display h2,
+.controls h2 {
+    margin-top: 0;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.map-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.map-items {
+    flex-grow: 1;
+    min-height: 200px;
+    overflow-y: auto;
+    padding-right: 10px;
+    /* For scrollbar */
+}
+
+.map-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    background-color: var(--input-bg-color);
+    transition: all 0.3s ease;
+}
+
+.map-item.highlight {
+    background-color: var(--primary-variant-color);
+    transform: scale(1.02);
+    box-shadow: 0 0 15px var(--primary-variant-color);
+}
+
+.map-key {
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.map-value {
+    font-style: italic;
+}
+
+.empty-map-message {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    margin-top: 2rem;
+}
+
+.result {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-weight: 500;
+    min-height: 24px;
+    /* Prevent layout shift */
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.control-group {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.5rem;
+}
+
+.control-group:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.controls input[type="text"] {
+    background: var(--input-bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 0.75rem;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0.75rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.controls input[type="text"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+.controls button {
+    background: var(--primary-color);
+    color: #000;
+    font-weight: 700;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.controls button:hover {
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.controls button.clear-btn {
+    background-color: #cf6679;
+    /* A reddish color for destructive action */
+    color: #000;
+}
+
+.controls button.clear-btn:hover {
+    background-color: #b00020;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 450px) {
+    .visualizer-container {
+        flex-direction: column;
+    }
+
+    .map-visualizer {
+        padding: 1rem;
+    }
+}

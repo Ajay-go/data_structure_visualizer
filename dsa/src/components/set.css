@@ -1,0 +1,157 @@
+#set-visualizer {
+    background-color: #121212;
+    color: white;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+
+
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #90caf9;
+    margin-bottom: 1rem;
+}
+
+/* Theory */
+#theory {
+    background-color: #1d1d1d;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #444;
+    margin-bottom: 2rem;
+}
+
+#theory p,
+#theory li {
+    color: #ccc;
+}
+
+#theory strong {
+    color: #f0c38e;
+}
+
+/* Layout container */
+.visualizer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Left: Set display */
+.set-display {
+    flex: 1;
+    min-width: 250px;
+    max-width: 600px;
+}
+
+.set-display h2 {
+    text-align: center;
+    color: #81c784;
+}
+
+.set-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    border: 2px solid #00bfff;
+    box-shadow: 0 0 10px #00bfff77;
+    min-height: 60px;
+    justify-content: center;
+}
+
+.set-item {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px dashed #ccc;
+    font-size: 1rem;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Right: Controls */
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.controls input,
+.controls button {
+    padding: 0.6rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.controls input {
+    background-color: #1d1d1d;
+    color: white;
+    border: 1px solid #444;
+}
+
+.controls input::placeholder {
+    color: #aaa;
+}
+
+.controls button {
+    background-color: #1e88e5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #1565c0;
+}
+
+/* Result */
+.result {
+    text-align: center;
+    margin-top: 1rem;
+    color: #ffeb3b;
+    font-weight: 500;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .visualizer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .controls,
+    .set-display {
+        width: 100%;
+    }
+
+}

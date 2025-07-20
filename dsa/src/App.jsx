@@ -7,6 +7,8 @@ import Queue from "./components/queue.jsx";
 import Stack from "./components/stack.jsx";
 import LinkedList from "./components/linkedlist.jsx";
 import PriorityQueue from "./components/priority_queue.jsx";
+import Set from "./components/set.jsx";
+import MapVisualizer from "./components/map.jsx";
 function App() {
   return (
     <>
@@ -17,6 +19,8 @@ function App() {
         <Route path="/stack" element={<Stack />} />
         <Route path="/linked-list" element={<LinkedList />} />
         <Route path="/priority-queue" element={<PriorityQueue />} />
+        <Route path="/set" element={<Set />} />
+        <Route path="/map" element={<MapVisualizer />} />
       </Routes>
     </>
   );

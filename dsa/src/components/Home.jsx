@@ -18,6 +18,8 @@ function Home() {
                     <button id="button" onClick={() => navigate('/stack')}>Stack</button>
                     <button id="button" onClick={() => navigate('/queue')}>Queue</button>
                     <button id="button" onClick={() => navigate('/priority-queue')}>Priority Queue</button>
+                    <button id="button" onClick={() => navigate('/set')}>Set</button>
+                    <button id="map" onClick={() => navigate('/map')}>Map</button>
                 </div>
                 <h3>
                     <a
