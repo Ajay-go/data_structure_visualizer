@@ -1,0 +1,105 @@
+/* sort.css */
+
+/* Container styling */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #121212;
+    color: #eee;
+    padding: 25px 30px;
+    border-radius: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.6);
+}
+
+/* Array container */
+.array-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 10px 0;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Each array element box */
+.array-box {
+    background-color: #222;
+    color: #eee;
+    border: 2px solid #555;
+    padding: 20px 0;
+    width: 45px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    user-select: none;
+}
+
+/* Highlight active indices */
+.array-box.active {
+    background-color: #00bcd4;
+    border-color: #00e5ff;
+    color: #fff;
+}
+
+/* Controls container */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+/* Buttons styling */
+button {
+    background-color: #00bcd4;
+    color: #121212;
+    font-weight: 600;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    box-shadow: 0 0 8px #00bcd4;
+    transition: background-color 0.25s ease;
+}
+
+button:hover:not(:disabled) {
+    background-color: #00e5ff;
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="number"] {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background-color: #222;
+    color: #eee;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Step description text */
+.step-description {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    min-height: 28px;
+}
+
+/* Theory box styling */
+.container>div[style] {
+    box-sizing: border-box;
+    /* Keeps the inline styles intact */
+}

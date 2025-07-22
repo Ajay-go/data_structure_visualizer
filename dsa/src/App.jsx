@@ -10,6 +10,8 @@ import PriorityQueue from "./components/priority_queue.jsx";
 import Set from "./components/set.jsx";
 import MapVisualizer from "./components/map.jsx";
 import TreeVisualizer from "./components/tree.jsx";
+import MergeSortVisualizer from "./components/mergesort.jsx";
+import QuickSortVisualizer from "./components/quick_sort.jsx";
 function App() {
   return (
     <>
@@ -23,6 +25,8 @@ function App() {
         <Route path="/set" element={<Set />} />
         <Route path="/map" element={<MapVisualizer />} />
         <Route path="/tree" element={<TreeVisualizer />} />
+        <Route path="/merge-sort" element={<MergeSortVisualizer />} />
+        <Route path="/quick-sort" element={<QuickSortVisualizer />} />
       </Routes>
     </>
   );

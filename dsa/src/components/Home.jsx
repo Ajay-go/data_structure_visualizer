@@ -21,6 +21,8 @@ function Home() {
                     <button id="button" onClick={() => navigate('/set')}>Set</button>
                     <button id="button" onClick={() => navigate('/map')}>Map</button>
                     <button id="button" onClick={() => navigate('/tree')}>Binary Tree</button>
+                    <button id="button" onClick={() => navigate('/merge-sort')}>Merge Sort</button>
+                    <button id="button" onClick={() => navigate('/quick-sort')}>Quick Sort</button>
                 </div>
                 <h3>
                     <a
