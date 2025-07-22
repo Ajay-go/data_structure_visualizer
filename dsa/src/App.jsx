@@ -9,6 +9,7 @@ import LinkedList from "./components/linkedlist.jsx";
 import PriorityQueue from "./components/priority_queue.jsx";
 import Set from "./components/set.jsx";
 import MapVisualizer from "./components/map.jsx";
+import TreeVisualizer from "./components/tree.jsx";
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/priority-queue" element={<PriorityQueue />} />
         <Route path="/set" element={<Set />} />
         <Route path="/map" element={<MapVisualizer />} />
+        <Route path="/tree" element={<TreeVisualizer />} />
       </Routes>
     </>
   );

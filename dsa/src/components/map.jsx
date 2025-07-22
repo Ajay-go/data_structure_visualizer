@@ -83,12 +83,12 @@ const MapVisualizer = () => {
 
 
             <div className="map-visualizer">
-                <h1>Map Data Structure</h1>
+                <h1>Map</h1>
                 <button id="home_button" onClick={() => navigate('/')}>Home</button>
                 <div className="map-theory">
                     <h2>What is a Map?</h2>
                     <p>
-                        A <strong>Map</strong> in JavaScript holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and primitive values) may be used as either a key or a value. They are optimized for frequent additions and removals of elements.
+                        A <strong>Map</strong> is a data structure that holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and primitive values) may be used as either a key or a value. They are optimized for frequent additions and removals of elements.
                     </p>
                     <p><strong>Time Complexity of Common Operations:</strong></p>
                     <ul>

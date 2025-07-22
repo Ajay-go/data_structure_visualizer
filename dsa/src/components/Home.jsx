@@ -19,7 +19,8 @@ function Home() {
                     <button id="button" onClick={() => navigate('/queue')}>Queue</button>
                     <button id="button" onClick={() => navigate('/priority-queue')}>Priority Queue</button>
                     <button id="button" onClick={() => navigate('/set')}>Set</button>
-                    <button id="map" onClick={() => navigate('/map')}>Map</button>
+                    <button id="button" onClick={() => navigate('/map')}>Map</button>
+                    <button id="button" onClick={() => navigate('/tree')}>Binary Tree</button>
                 </div>
                 <h3>
                     <a
